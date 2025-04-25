@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Quiz App</title>
+    <!-- Links to an external CSS file for styling -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  
+  <body>
+    <!-- Main container for the quiz application -->
+    <div class="app">
+      <!-- Main heading/title of the quiz -->
+
+      <div class="logo-container">
+        <img src="images/logo.jpeg" alt="Quiz Logo" class="logo">
+    </div>
+      <h1>Quiz by Amit</h1>
+      <!-- Container for the quiz content -->
+      <div class="quiz">
+        <!-- Placeholder for quiz questions (will be filled dynamically via JavaScript) -->
+        <h2 id="question">Question goes here</h2>
+        <!-- Container for answer buttons (initially empty, will be populated via JS) -->
+        <div id="answer-buttons" class="answer-buttons">
+          
+          <!--
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+                -->
+        </div>
+
+        <!-- Navigation buttons container -->
+        <div class="nav-buttons">
+          <!-- Button to go back to previous question -->
+          <button id="back-btn">Back</button>
+          <!-- Button to proceed to next question -->
+          <button id="next-btn">Next</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer section with copyright and credits -->
+    <footer class="footer">
+      <p>© 2025 Quiz App. All rights reserved.</p>
+
+      <p>Created with ❤️ for knowledge seekers by AKS</p>
+    </footer>
+
+    <!-- Links to external JavaScript file for quiz functionality -->
+    <script src="script.js"></script>
+  </body>
+</html>

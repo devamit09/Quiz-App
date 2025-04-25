@@ -1,0 +1,186 @@
+/* Universal reset: removes default margins/padding, sets font, and uses border-box sizing */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Body styling: dark blue background, full viewport height, flex column layout */
+body {
+    background: #015364;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main quiz container: white background, centered, rounded top corners */
+.app {
+    background: #fff;
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto 0;
+    border-radius: 10px 10px 0 0;
+    padding: 20px;
+    flex: 1; /* Fills remaining space in flex column */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers content horizontally */
+}
+
+/* Logo Styles */
+.logo-container {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.logo {
+    max-height: 80px; /* Adjust based on your logo size */
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+/* Quiz section padding */
+.quiz {
+    padding: 15px 0;
+}
+
+/* Quiz title styling */
+.quiz h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
+    /* Add margin-top to separate from logo */
+    margin-top: 10px;
+}
+
+/* Question text styling */
+.quiz h2 {
+    font-size: 18px;
+    color: #001e4d;
+    font-weight: 600;
+    margin-bottom: 15px;
+
+}
+
+/* Answer button styling */
+.btn {
+    background: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 12px;
+    margin: 8px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s; /* Smooth hover effect */
+    font-size: 16px;
+}
+
+/* Hover effect for active buttons */
+.btn:hover:not([disabled]) {
+    background: #222;
+    color: #fff;
+}
+
+/* Disabled button styling */
+.btn:disabled {
+    cursor: no-drop; /* Shows "not allowed" cursor */
+}
+
+/* Next/Back button styling */
+#next-btn, #back-btn {
+    background: #001e4d;
+    color: #fff;
+    font-weight: 500;
+    width: 120px;
+    border: 0;
+    padding: 10px;
+    margin: 15px 0 0;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Next/Back button hover effect */
+#next-btn:hover, #back-btn:hover {
+    background: #333;
+}
+
+/* Navigation buttons layout */
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Correct answer visual feedback */
+.correct {
+    background: #9aeabc; /* Light green */
+}
+
+/* Incorrect answer visual feedback */
+.incorrect {
+    background: #ff9393; /* Light red */
+}
+
+/* Footer styling */
+.footer {
+    background: #22220b;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    border-radius: 0 0 10px 10px; /* Rounded bottom corners */
+    font-size: 14px;
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto 20px; /* Centers footer */
+}
+
+/* Footer paragraph spacing */
+.footer p {
+    margin: 5px 0;
+}
+
+/* Mobile responsiveness (for screens ≤ 480px) */
+@media (max-width: 480px) {
+    /* Smaller app container */
+    .app {
+        padding: 15px;
+        margin: 10px auto 0;
+    }
+    
+    /* Smaller quiz title */
+    .quiz h1 {
+        font-size: 20px;
+    }
+    
+    /* Smaller question text */
+    .quiz h2 {
+        font-size: 16px;
+    }
+    
+    /* Compact answer buttons */
+    .btn {
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    /* Smaller navigation buttons */
+    #next-btn, #back-btn {
+        width: 100px;
+        padding: 8px;
+        font-size: 14px;
+    }
+    
+    /* Compact footer */
+    .footer {
+        padding: 10px 0;
+        font-size: 12px;
+    }
+}

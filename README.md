@@ -59,16 +59,20 @@ const questions = [
     // Add more questions...
 ];
 
-Screenshots
+ 2. Modify the styling in style.css to change colors, fonts, etc.
+
+ 3. Replace logo.jpeg in the images folder with your own logo (recommended size: 80x80px)
+
+## Screenshots
 (images/Screenshot.png)
 
-Contributing
+## Contributing
 Contributions are welcome! Please fork the repository and create a pull request with your improvements.
 
-License
+## License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-Acknowledgments
+## Acknowledgments
 Created with ❤️ by AKS
 
 Inspired by knowledge seekers everywhere

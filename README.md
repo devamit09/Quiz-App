@@ -24,7 +24,7 @@ A responsive, interactive quiz application built with HTML, CSS, and JavaScript.
 
 ## Demo
 
-[Live Demo](#) *(Add your live demo link here when deployed)*
+[Live Demo](https://devamit09.github.io/Quiz-App/) 
 
 ## Installation
 
